@@ -1,3 +1,9 @@
+// **Comparison Operators Exercises**
+
+// These exercises are aimed at making you familiar with the comparison operators. **Print all your checks to the console.**
+
+// Declare two variables "x" and "y". Assign a value of 20 to x. Assign a value of 30 to y.
+
 let x = 20;
 let y = 30;
 

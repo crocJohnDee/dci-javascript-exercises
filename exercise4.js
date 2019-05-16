@@ -1,3 +1,9 @@
+// **Operators Exercises**
+
+// These exercises are aimed at making you familiar with the aritmetic operators. Print all your results to the console.
+
+// Declare two variables "x" and "y" and assign number values. 
+
 // 1. Add x and y, and print the result to the console.
 let x = 25;
 let y = 50;
