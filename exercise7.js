@@ -48,4 +48,5 @@ console.log("10: " + `My name is ${name}. I live in ${city} and I am a ${job}`);
 
 // 11. Declare a variable and assign the value "the quick brown fox" (all in lower case). Capitalize the first letter of that string. Print the result to the console.
 let fox = "the quick brown fox";
+fox[0].toUpperCase();
 console.log("11: " + fox[0].toUpperCase() + fox.substr(1));

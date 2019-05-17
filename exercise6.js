@@ -4,9 +4,9 @@
 // **Every capitalized word stands for the logical operator that you must use in each task.** Make sure that you are using the correct logical operator. 
 
 // Declare two variables "a" with the value of true and "b" with the value of false. 
-
 let a = true;
 let b = false;
+
 // 1. Check the result of a AND b. 
 console.log("1: " + (a && b));
 
@@ -20,7 +20,7 @@ console.log("3: " + (!a && b));
 let x = 10;
 let y = 20;
 let z = 30;
-console.log("4: " + a, y, z);
+console.log("4: " + `${x} ${y} ${z} `);
 
 // 5. Check the result of whether x is greater than z AND x is greater than y.
 console.log("5: " + ((x > z) && (x > y)));
