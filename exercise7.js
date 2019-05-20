@@ -22,7 +22,7 @@ console.log("4: " + greet2.toLowerCase());
 
 // 5. Check if the sentence "nice shoes" contains the letter l or n. 
 let shoes = "nice shoes";
-console.log("5: " + shoes.includes("l"), shoes.includes("n"));
+console.log("5: " + shoes.includes("l" || "n"));
 
 // 6. Create a new string from a given string with the first character of the given string added at the front and back. example of exepected output: JavaScript => JJavaScriptJ
 let newString = hobby[0] + hobby + hobby[0];
@@ -30,7 +30,7 @@ console.log("6: " + newString);
 
 // 7. Create a new string from a given string taking the last 3 characters of the string and add them to both the front and back of the new string. The string length must be 3 or more.
 // eg. of output: javascript => iptJavaScriptipt
-let newerString = hobby.substr(7, 3) + hobby + hobby.substr(7, 3);
+let newerString = hobby.substr(7) + hobby + hobby.substr(7);
 console.log("7: " + newerString);
 
 // 8. Create a variable and assign a string value to it. Then, convert the value to upper case and print the converted value to the console and check whether it includes "Java".
@@ -48,5 +48,4 @@ console.log("10: " + `My name is ${name}. I live in ${city} and I am a ${job}`);
 
 // 11. Declare a variable and assign the value "the quick brown fox" (all in lower case). Capitalize the first letter of that string. Print the result to the console.
 let fox = "the quick brown fox";
-fox[0].toUpperCase();
 console.log("11: " + fox[0].toUpperCase() + fox.substr(1));
