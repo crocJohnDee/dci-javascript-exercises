@@ -6,7 +6,7 @@ let firstName = "Johnny";
 let age = 30;
 if (age < 13) {
     console.log(`1: ${firstName} is a boy`);
-} else if (age >= 20 && age < 20) {
+} else if (age >= 13 && age < 20) {
     console.log(`1: ${firstName} is a teenager`);
 } else {
     console.log(`1: ${firstName} is a man`);
@@ -19,8 +19,8 @@ if (age < 13) {
 // > Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console.
 // > Like before, change the scores to generate different winners, keeping in mind there might be draws.
 let gamesPlayed = 3;
-let mikeAvrg = ((186 + 94 + 123) / gamesPlayed).toFixed();
-let johnAvrg = ((181 + 120 + 101) / gamesPlayed).toFixed();
+let mikeAvrg = ((186 + 105 + 123) / gamesPlayed).toFixed();
+let johnAvrg = ((120 + 120 + 101) / gamesPlayed).toFixed();
 let maryAvrg = ((97 + 131 + 175) / gamesPlayed).toFixed();
 
 
@@ -59,7 +59,7 @@ if (johnAvrg < mikeAvrg && maryAvrg < mikeAvrg) {
 // - D if the average is greater than 30 and less than or equal to 40. 
 // - F if the average is less than or equal to 30.
 
-let studAvrg = (90 + 64 + 75 + 83 + 80 + 55) / 6;
+let studAvrg = (90 + 64 + 75 + 20 + 80 + 55) / 6;
 
 
 if (studAvrg > 90) {
@@ -86,8 +86,6 @@ if (studAvrg > 90) {
     console.log(`3: F`);
 }
 
-
-
 // 4. Make an if/else statement depending on the weather today!
 // Create a variable named "temperature" and "weather".
 // Then, create outputs based on the variable values e.g.
@@ -97,7 +95,7 @@ if (studAvrg > 90) {
 
 // Do this for sunny weather, rainy weather, snow and an overcast sky.
 let weather = ["sunny", "raining", "overcasted", "snowing"];
-let temperature = -13;
+let temperature = 25;
 
 if (temperature > 25) {
     console.log(`4: It is ${temperature} degrees outside and ${weather[0]}`);
@@ -119,7 +117,7 @@ if (temperature > 25) {
 // Print different outputs depending on the value of "job" eg. "Maria is a teacher in Berlin" / "Maria is a designer in Berlin". 
 // Make 5 different possible outcomes depending on the value of job.
 let jobArr = ["Developer", "Astronaut", "turtle-sitter", "statue", "cup of coffee"];
-let job = "Astronaut";
+let job = "cup of coffee";
 
 if (job === jobArr[0]) {
     console.log(`5: ${firstName} is a ${jobArr[0]} in Berlin`);
@@ -139,17 +137,26 @@ if (job === jobArr[0]) {
 
 // 6. Determine whether a given year is a leap year in the Gregorian calendar. 
 
-let year = 2016;
+let year = 1585;
 
-if ((year % 4) === 0) {
-    console.log(`6: ${year} is a leap year`);
-} else {
+if (year % 4 === 0) {
+
+    if (year % 100 === 0) {
+        console.log(`6: ${year} is not a leap year`);
+    } else if (year % 400 === 0 || year % 4 === 0) {
+        console.log(`6: ${year} is a leap year`);
+    }
+
+} else if (year % 4 != 0) {
     console.log(`6: ${year} is not a leap year`);
 }
 
 
+
+
+
 // 7. Check if a number is divisible by 3. If it is, print "Fizz". Check if a number is divisible by "5". If it is, print "Buzz". Check is a number is divisible by both 3 and 5. If it is, print "FizzBuzz". If none of the above apply, print the number.
-let num = 15;
+let num = 3;
 let fizz = ((num % 3) === 0);
 let buzz = ((num % 5) === 0);
 let fizzbuzz = ((num % 3) === 0) && ((num % 5) === 0);
@@ -166,3 +173,5 @@ if (fizzbuzz) {
 } else {
     console.log(`7: ${num}`);
 }
+
+
