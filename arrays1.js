@@ -3,23 +3,23 @@ console.log(cities);
 
 //Add to the back of array
 cities.push("Utrecht");
-console.log(cities);
+console.log("test: ", cities);
 
 // Remove from back of Array
 cities.pop();
-console.log(cities);
+console.log("test: ", cities);
 
 // Remove from beginning
 cities.shift()
-console.log(cities);
+console.log("test: ", cities);
 
 // Add to the first of an array
 cities.unshift("Darsalaam");
-console.log(cities);
+console.log("test: ", cities);
 
 // swap with bracket notation
 cities[2] = "Skagen";
-console.log(cities);
+console.log("test: ", cities);
 
 
 //1: Create a ToDo list with at least 5 items. Print the first and second to last item
@@ -33,4 +33,4 @@ const numbers = [53, 213, 123, 34, 5642, 123];
 numbers[1] = 15;
 numbers.push("five hundred");
 numbers.shift();
-console.log(`2: ${numbers}`);
+console.log(`2: `, numbers);
