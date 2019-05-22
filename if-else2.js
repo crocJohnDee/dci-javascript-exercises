@@ -137,13 +137,15 @@ if (job === jobArr[0]) {
 
 // 6. Determine whether a given year is a leap year in the Gregorian calendar. 
 
-let year = 1585;
+let year = 1704;
 
 if (year % 4 === 0) {
 
-    if (year % 100 === 0) {
+    if (year % 400 === 0) {
+        console.log(`6: ${year} is a leap year`);
+    } else if (year % 100 === 0) {
         console.log(`6: ${year} is not a leap year`);
-    } else if (year % 400 === 0 || year % 4 === 0) {
+    } else {
         console.log(`6: ${year} is a leap year`);
     }
 
