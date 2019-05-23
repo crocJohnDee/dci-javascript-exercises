@@ -153,10 +153,6 @@ if (year % 4 === 0) {
     console.log(`6: ${year} is not a leap year`);
 }
 
-
-
-
-
 // 7. Check if a number is divisible by 3. If it is, print "Fizz". Check if a number is divisible by "5". If it is, print "Buzz". Check is a number is divisible by both 3 and 5. If it is, print "FizzBuzz". If none of the above apply, print the number.
 let num = 3;
 let fizz = ((num % 3) === 0);
